@@ -778,6 +778,14 @@ video {
   display: none;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1719,6 +1727,26 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-second-bottom-right {
+  background-image: linear-gradient(-90deg,rgba(138, 204, 80, 0.5), rgba(255, 0, 0, 0));
+}
+
+.bg-second-left {
+  background-image: linear-gradient(45deg,rgba(138, 204, 80, 0.5), rgba(0, 0, 0, 0));
+}
+
+.bg-second-right {
+  background-image: linear-gradient(-45deg,rgba(138, 204, 80, 0.5), rgba(0, 0, 0, 0));
+}
+
+.bg-second-top {
+  background-image: linear-gradient(180deg,rgba(138, 204, 80, 0.5), rgba(0, 0, 0, 0));
+}
+
+.bg-second-top-left {
+  background-image: linear-gradient(135deg,rgba(138, 204, 80, 0.5), rgba(255, 0, 0, 0));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1885,11 +1913,6 @@ video {
   vertical-align: super;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1969,6 +1992,10 @@ video {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-accent {
+  color: rgba(244, 186, 0, 1);
 }
 
 .text-blue-500 {
