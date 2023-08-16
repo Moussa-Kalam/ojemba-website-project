@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <title>Ojemba Website</title>
+    <title>Ojemba</title>
   </head>
+  <script>
+    const loadComponents = (id, url) => {
+      fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById(id).innerHTML = html;
+        });
+    };
+
+    window.onload = () => {
+      loadComponents("sample", "src/sections/sample.html");
+    };
+  </script>
   <body>
-    <h1 class="text-3xl font-bold underline text-blue-600">Hello world!</h1>
+    <div id="sample"></div>
   </body>
 </html>
