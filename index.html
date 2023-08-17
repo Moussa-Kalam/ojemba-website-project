@@ -19,12 +19,16 @@
     window.onload = () => {
       loadComponents("sample", "src/sections/sample.html");
       loadComponents("navbar", "src/sections/navbar.html");
+      loadComponents("hero", "src/sections/hero.html");
     };
   </script>
   <body>
     <!-- <div id="sample"></div> -->
-    <header>
+    <header
+      class="bg-gradient-to-r from-primary to-secondary min-h-screen from-[30%]"
+    >
       <div id="navbar"></div>
+      <div id="hero"></div>
     </header>
   </body>
 </html>
