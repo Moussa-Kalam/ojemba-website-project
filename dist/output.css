@@ -589,12 +589,24 @@ video {
   width: 200px;
 }
 
+.max-w-\[1024px\]{
+  max-width: 1024px;
+}
+
+.max-w-\[1280px\]{
+  max-width: 1280px;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col{
   flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
 }
 
 .justify-between{
