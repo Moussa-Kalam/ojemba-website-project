@@ -20,6 +20,11 @@ export const theme = {
       "second-right":
         "linear-gradient(-45deg,rgba(138, 204, 80, 0.5), rgba(0, 0, 0, 0))",
     },
+    fontFamily: {
+      montserrat: ["Montserrat", "sans-serif"],
+      raleway: ["Raleway", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
+    },
   },
 };
 export const plugins = [];
