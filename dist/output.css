@@ -665,10 +665,6 @@ video {
   left: 0.75rem;
 }
 
-.right-0{
-  right: 0px;
-}
-
 .top-3{
   top: 0.75rem;
 }
@@ -3104,6 +3100,10 @@ video {
 
   .md\:mt-36{
     margin-top: 9rem;
+  }
+
+  .md\:block{
+    display: block;
   }
 
   .md\:inline-block{
