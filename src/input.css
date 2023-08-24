@@ -3,7 +3,7 @@ details summary div::before {
   content: "+";
 }
 details[open] summary div::before {
-  content: "x";
+  content: "-";
 }
 @tailwind base;
 @tailwind components;
