@@ -5,6 +5,10 @@ details summary div::before {
 details[open] summary div::before {
   content: "-";
 }
+details summary ~ p {
+  padding-top: 1rem;
+  font-weight: 500;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
