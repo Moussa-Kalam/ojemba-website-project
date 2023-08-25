@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
-
+details summary div::before {
+  content: "+";
+}
+details[open] summary div::before {
+  content: "-";
+}
+details summary ~ p {
+  padding-top: 1rem;
+  font-weight: 500;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
