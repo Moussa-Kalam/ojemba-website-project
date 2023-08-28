@@ -25,6 +25,9 @@ export const theme = {
       raleway: ["Raleway", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
     },
+    spacing: {
+      mxScreen: "calc((100% - 1480px) / 2)",
+    },
   },
 };
 export const plugins = [];
