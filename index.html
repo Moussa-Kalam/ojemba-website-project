@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <title>Ojemba Website</title>
+
+    <title>Ojemba</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-blue-600">Hello world!</h1>
+  <script>
+    const loadComponents = (id, url) => {
+      fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById(id).innerHTML = html;
+        });
+    };
+
+    window.onload = () => {
+      loadComponents("navbar", "src/sections/navbar.html");
+      loadComponents("hero", "src/sections/hero.html");
+      loadComponents("managed-teams", "src/sections/managed_teams.html");
+      loadComponents("unsere-teams", "src/sections/unsereTeams.html");
+      loadComponents("qaSection", "src/sections/quality.html");
+      loadComponents("partners", "src/sections/partners.html");
+      loadComponents("founders", "src/sections/founders.html");
+      loadComponents("rwanda", "src/sections/rwanda.html");
+      loadComponents("faqs", "src/sections/faqs.html");
+      loadComponents("footer", "src/sections/footer.html");
+    };
+  </script>
+  <body class="mx-auto">
+    <header class="bg-gradient-to-r from-primary to-secondary from-[30%]">
+      <div class="px-mxScreen">
+        <div id="navbar" class="px-5 md:px-10 lg:px-20"></div>
+        <div id="hero"></div>
+      </div>
+    </header>
+    <main class="bg-primary">
+      <div id="managed-teams"></div>
+      <div id="unsere-teams"></div>
+      <div id="qaSection"></div>
+      <div id="partners"></div>
+      <div id="founders"></div>
+      <div id="rwanda"></div>
+      <div id="faqs"></div>
+    </main>
+    <footer>
+      <div id="footer"></div>
+    </footer>
   </body>
 </html>
